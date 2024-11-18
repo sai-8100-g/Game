@@ -1,0 +1,76 @@
+.memory-popup {
+  position: absolute;
+  width: 70%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .memory-popup {
+    width: 95%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .memory-popup {
+    width: 70%;
+  }
+}
+
+.memory-popup .heading {
+  color: #1a202c;
+}
+
+@media (min-width: 2560px) {
+  .memory-popup .heading {
+    font-size: 80px;
+  }
+}
+
+.memory-popup .close-btn {
+  color: #1a202c;
+  border: 0px solid;
+  background-color: transparent;
+  align-self: flex-end;
+  border-top-right-radius: 10px;
+}
+
+.memory-popup .close-btn .icon {
+  color: #1a202c !important;
+}
+
+.memory-popup .memory-ul {
+  display: flex;
+}
+
+@media (max-width: 576px) {
+  .memory-popup .memory-ul {
+    flex-direction: column;
+    height: 300px;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .memory-popup .memory-ul {
+    height: 400px;
+    overflow: auto;
+  }
+}
+
+.memory-popup .memory-ul li {
+  color: #1a202c;
+  line-height: 30px;
+}
+
+@media (min-width: 2560px) {
+  .memory-popup .memory-ul li {
+    font-size: 20px;
+    line-height: 44px;
+  }
+}
